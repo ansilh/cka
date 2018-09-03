@@ -10,10 +10,10 @@
  - dashboard
  - metallb
 
-2. gateone  
+2.Gateone Web Terminal 
  - Only for lab (you have to deal with this in actual exam)
 
-3. Get familier with the structure of kubernetes.io so that you can navigate easily during exam
+3.Get familier with the structure of kubernetes.io so that you can navigate easily during exam
 
 **Preperation**
 
