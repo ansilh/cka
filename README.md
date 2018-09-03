@@ -38,6 +38,10 @@ source <(kubectl completion bash)
 ```
 3.Open kubernetes.io in second tab for reference
 
+4.YAML to JSON one liner
+```
+ruby -ryaml -rjson -e 'puts JSON.pretty_generate(JSON.parse(YAML.load(ARGF.read).to_json))' <spec.yaml
+```
 
 **Topics**
 
