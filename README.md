@@ -24,12 +24,12 @@ tmux list-sessions
 tmux detach -s <>
 tmux attach -t <>
 
-C-b %
-C-b "
-C-b Pageup/Down ( quit q)
-C-b c New
-C-b n next
-C-b previous 
+C-b % - vertical split
+C-b " - horizontal split
+C-b Pageup/Down ( quit q) - Scroll
+C-b c - New session
+C-b n - Next session
+C-b p - Previous session 
 ```
 
 2.Enable bash completion 
