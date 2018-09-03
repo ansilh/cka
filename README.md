@@ -45,4 +45,15 @@ $ python -c 'import sys, yaml, json; y=yaml.load(sys.stdin.read()); print json.d
 ```
 
 **Topics**
+* Security
+
+$kubectl auth can-i create pod --as ansil --namespace shpping-app
+
+Three APIs can be applied to set who and what can be queried 
+
+- SelfSubjectAccessReview
+- LocalSubjectAccessReview
+- SelfSubjectRuleReview
+
+reconcile
 
