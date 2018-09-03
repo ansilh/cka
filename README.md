@@ -3,7 +3,7 @@
 
 **Practice Lab**
 
-1.Install cluster using kubeadm (will setup via hardway )
+1.Install cluster using kubeadm (will setup via hardway later)
  - one master & 4 workers
  - weave net
  - metric server
