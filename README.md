@@ -47,7 +47,7 @@ $ python -c 'import sys, yaml, json; y=yaml.load(sys.stdin.read()); print json.d
 **Topics**
 * Security
 
-$kubectl auth can-i create pod --as ansil --namespace shpping-app
+$kubectl auth can-i create pod --as ansil --namespace shopping-app
 
 Three APIs can be applied to set who and what can be queried 
 
@@ -57,3 +57,15 @@ Three APIs can be applied to set who and what can be queried
 
 reconcile
 
+- Resource version is backed via modifiedIndex parameter in etcd database
+* Annotations is another type of metadata in an object used by componetnts outside of kubernetes
+
+$ kubectl annotate pod nginx descreption="Nginx v1" -n shopping-app
+$ kubectl annotate --overwrite pods descreption="Nginx v1 old" -n shopping-app
+$ kubectl annotate pods descreption- -n shopping-app
+
+* Kubectl verbose output
+
+$kubectl --v=10 get pods nginx
+
+verbosity ranges from 0 to 9 
