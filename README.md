@@ -40,7 +40,8 @@ source <(kubectl completion bash)
 
 4.YAML to JSON one liner
 ```
-ruby -ryaml -rjson -e 'puts JSON.pretty_generate(JSON.parse(YAML.load(ARGF.read).to_json))' <spec.yaml
+$ ruby -ryaml -rjson -e 'puts JSON.pretty_generate(JSON.parse(YAML.load(ARGF.read).to_json))' <spec.yaml
+$ python -c 'import sys, yaml, json; y=yaml.load(sys.stdin.read()); print json.dumps(y,indent=4,sort_keys=True)'  <spec.yaml
 ```
 
 **Topics**
