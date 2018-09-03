@@ -1,4 +1,4 @@
-# K8S CKA Exam preperation gugide
+# K8S CKA Exam preperation guide
 
 
 **Practice Lab**
