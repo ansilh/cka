@@ -69,3 +69,9 @@ $ kubectl annotate pods descreption- -n shopping-app
 $kubectl --v=10 get pods nginx
 ```
 verbosity ranges from 0 to 9 
+* Imparative commands 
+```
+kubectl run --restart=Always # creates a Deployment
+kubectl run --restart=Never # creates bare pod
+kubectl run --restart=OnFailure # creates a Job.
+```
