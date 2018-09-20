@@ -75,3 +75,8 @@ kubectl run --restart=Always # creates a Deployment
 kubectl run --restart=Never # creates bare pod
 kubectl run --restart=OnFailure # creates a Job.
 ```
+* List containers 
+```
+runc --root /run/containerd/runc/k8s.io/ list
+runc --root /run/containerd/runc/k8s.io/ ps 0181be912592e680746df7fa9cc8b1e2b1630c784748dbe1ae3898330d484902
+``` 
