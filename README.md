@@ -80,3 +80,7 @@ kubectl run --restart=OnFailure # creates a Job.
 runc --root /run/containerd/runc/k8s.io/ list
 runc --root /run/containerd/runc/k8s.io/ ps 0181be912592e680746df7fa9cc8b1e2b1630c784748dbe1ae3898330d484902
 ``` 
+* Display custom columns
+```
+kubectl get runtimeclasses -o=custom-columns=NAME:.metadata.name,HANDLER:.spec.runtimeHandler,TIMESTAMP:.metadata.creationTimestamp
+```
