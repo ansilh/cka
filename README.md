@@ -30,6 +30,9 @@ C-b Pageup/Down ( quit q) - Scroll
 C-b c - New session
 C-b n - Next session
 C-b p - Previous session 
+C-b : - Command line
+setw setw synchronize-panes on - Trun on command execution on all panes
+setw setw synchronize-panes off - Trun on command execution on all panes
 ```
 
 2.Enable bash completion 
