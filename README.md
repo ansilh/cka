@@ -87,3 +87,16 @@ runc --root /run/containerd/runc/k8s.io/ ps 0181be912592e680746df7fa9cc8b1e2b163
 ```
 kubectl get runtimeclasses -o=custom-columns=NAME:.metadata.name,HANDLER:.spec.runtimeHandler,TIMESTAMP:.metadata.creationTimestamp
 ```
+* Add insecure registry
+```
+sudo vi /etc/containerd/config.toml
+```
+>Append below contents
+```
+[plugins.cri.registry]
+      [plugins.cri.registry.mirrors]
+        [plugins.cri.registry.mirrors."172.168.3.164:5000"]
+          endpoint = ["http://172.168.3.164:5000"]
+        [plugins.cri.registry.mirrors."docker.io"]
+          endpoint = ["https://registry-1.docker.io"]
+```
