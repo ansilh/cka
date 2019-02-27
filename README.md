@@ -12,6 +12,17 @@
 
 2.Gateone Web Terminal 
  - Only for lab (you have to deal with this in actual exam)
+``` 
+$ sudo apt-get install python
+$ wget http://launchpadlibrarian.net/109052632/python-support_1.0.15_all.deb
+$ sudo dpkg -i python-support_1.0.15_all.deb
+$ wget https://github.com/downloads/liftoff/GateOne/python-tornado_2.4-1_all.deb
+$ sudo dpkg -i python-tornado_2.4-1_all.deb
+$ wget https://github.com/downloads/liftoff/GateOne/gateone_1.1-1_all.deb
+$ sudo dpkg -i gateone_1.1-1_all.deb
+$ sudo systemctl start gateone
+```
+Access it via `https://host_ip`
 
 3.Get familier with the structure of kubernetes.io so that you can navigate easily during exam
 
